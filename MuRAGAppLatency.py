@@ -291,7 +291,7 @@ if uploaded_file is not None:
     st.write(f"{bullet_point} Summary generation process completed")  
         
     
-    @st.cache_resource()
+   
     def create_multi_vector_retriever(
       _vectorstore, text_summaries, texts, table_summaries, tables, image_summaries, images
     ):
