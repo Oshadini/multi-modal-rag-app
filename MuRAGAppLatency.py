@@ -90,7 +90,7 @@ bullet_point = "◇"
 
 
 load = st.button("Load data")
-if load_state not in st.session_state:
+if "load_state" not in st.session_state:
     st.session_state.load_state = False
 
 if load or st.session_state.load_state:
