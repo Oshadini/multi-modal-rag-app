@@ -89,7 +89,7 @@ Multi-Modal RAG App with Multi Vector Retriever
 bullet_point = "◇"
 
 
-load = st.button(Load data)
+load = st.button("Load data")
 if load_state not in st.session_state:
     st.session_state.load_state = False
 
