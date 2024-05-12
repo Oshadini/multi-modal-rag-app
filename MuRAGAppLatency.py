@@ -95,7 +95,7 @@ if "load_state" not in st.session_state:
 
 if load or st.session_state.load_state:
     st.session_state.load_stat = True
-     question = st.text_input('Enter a question') 
+    question = st.text_input('Enter a question') 
     if uploaded_file is not None:
         st.title("Extraction process:-")
         st.write(f"{bullet_point} Extraction process started")
