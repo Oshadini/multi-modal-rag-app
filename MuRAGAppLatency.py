@@ -490,6 +490,6 @@ if st.session_state.load_state:
                   st.image(image_data)
                   found_image = True  # Set the flag to True to indicate that an image has been found 
     
-    st.session_state.load_stat = True    
+    st.session_state.load_stat = False    
     
     
