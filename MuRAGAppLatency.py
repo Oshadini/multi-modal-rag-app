@@ -338,7 +338,7 @@ if st.session_state.load_state:
           return retriever
         
     
-        vectorstore = Chroma(collection_name="mm_rag_mistral01",embedding_function=OpenAIEmbeddings(openai_api_key = openai.api_key))
+        vectorstore = Chroma(collection_name="mm_rag_mistral02",embedding_function=OpenAIEmbeddings(openai_api_key = openai.api_key))
     
         
         # Create retreiver
