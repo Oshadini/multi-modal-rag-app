@@ -210,7 +210,7 @@ if st.session_state.load_state:
             st.title("Summary generation process:-")
             st.write(f"{bullet_point} Summary generation process started")
             # Create session state variables
-             with st.spinner("Generating Text & Table summaries....."):
+            with st.spinner("Generating Text & Table summaries....."):
                 text_summaries, table_summaries = generate_text_summaries(texts, tables, summarize_texts=True)
                 st.session_state["text_summaries"] = text_summaries
                 st.session_state["table_summaries"] = table_summaries
