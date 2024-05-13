@@ -89,13 +89,13 @@ Multi-Modal RAG App with Multi Vector Retriever
 bullet_point = "◇"
 
 
-load = st.button("Load data")
+
 if "load_state" not in st.session_state:
     st.session_state.load_state = False
 
-if load or st.session_state.load_state:
+if st.session_state.load_state:
     st.session_state.load_stat = True
-    question = st.text_input('Enter a question') 
+ 
     if uploaded_file is not None:
         st.title("Extraction process:-")
         st.write(f"{bullet_point} Extraction process started")
@@ -470,7 +470,7 @@ if load or st.session_state.load_state:
         
          
         
-       
+        question = st.text_input('Enter a question')
         if(question):
             response= chain_multimodal_rag.invoke(question)
             st.write(response)
